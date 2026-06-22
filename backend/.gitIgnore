@@ -1,0 +1,14 @@
+# Dependency folders (Bohot bada folder hota hai, GitHub par nahi bhejte)
+node_modules/
+
+# Environment variables (Isme database aur secret keys hoti hain, secure rakhna hai)
+.env
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System files
+.DS_Store
+Thumbs.db
