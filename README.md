@@ -100,3 +100,33 @@ server.listen(PORT, () => {
 socket.io-client kya hai? Yeh ek specialized package hai jo humare React frontend ko backend ke Socket.io server se aapas mein sync/connect hone ki capability deta hai.
 
 autoConnect: false kyun lagaya? By default, jaise hi website open hoti hai, socket backend se connect ho jata hai. Zoom Clone mein hum chahte hain ki socket tabhi active ho jab banda actually kisi room unique ID ko create kare ya text box mein room ID daal kar "Join Call" button par click kare. Isse humare server par faltu ka load nahi padta.
+
+// STEP 2 A. SETUP REACT ROUTER 
+
+const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <AppLayout />,
+      children: [
+        {
+          index: true,
+          element: <HomeComponent />,
+        },
+        {
+          path: "about",
+          element: <About />,
+        },
+        { path: "history", element: <History /> },
+        {
+          path: "auth",
+          element: <Auth />,
+        },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
+};
+
+// STEP 2.B CREATE APP LAYOUT SETUP COMPLETE
