@@ -95,4 +95,8 @@ server.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
 });
 
+// STEP 2 FRONTEND CREATE REACT AND INSTALL SOCKET.IO-CLIENT
 
+socket.io-client kya hai? Yeh ek specialized package hai jo humare React frontend ko backend ke Socket.io server se aapas mein sync/connect hone ki capability deta hai.
+
+autoConnect: false kyun lagaya? By default, jaise hi website open hoti hai, socket backend se connect ho jata hai. Zoom Clone mein hum chahte hain ki socket tabhi active ho jab banda actually kisi room unique ID ko create kare ya text box mein room ID daal kar "Join Call" button par click kare. Isse humare server par faltu ka load nahi padta.
