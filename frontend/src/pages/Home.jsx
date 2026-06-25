@@ -20,11 +20,9 @@ import KeyboardIcon from "@mui/icons-material/Keyboard";
 import VideoCallIcon from "@mui/icons-material/VideoCall";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 
-
 function HomeComponentUI() {
-  
   const meetingCode = "";
-  const generatedCode = "abcd-efgh";  
+  const generatedCode = "abcd-efgh";
 
   return (
     <Box
@@ -36,7 +34,6 @@ function HomeComponentUI() {
       }}
     >
       {/* 1. RESPONSIVE NAVBAR */}
-      
 
       {/* 2. HERO SECTION */}
       <Container
